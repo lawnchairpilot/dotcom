@@ -1,0 +1,25 @@
+{
+  "name": "dotcom",
+  "version": "1.0.0",
+  "description": "personal website",
+  "homepage": "https://github.com/lawnchairpilot/dotcom#readme",
+  "bugs": {
+    "url": "https://github.com/lawnchairpilot/dotcom/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lawnchairpilot/dotcom.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "types": "commonjs, module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "express": "^5.2.1"
+  }
+}
