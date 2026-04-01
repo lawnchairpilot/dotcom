@@ -300,7 +300,7 @@ ul, ol {
 /* Standard eyebrow — tight tracking, amber */
 .t-eyebrow {
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.45em;
   text-transform: uppercase;
@@ -311,7 +311,7 @@ ul, ol {
 /* Muted eyebrow — for secondary metadata */
 .t-eyebrow-muted {
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.4em;
   text-transform: uppercase;
@@ -489,7 +489,7 @@ ul, ol {
 
 .hero-eyebrow {
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.45em;
   text-transform: uppercase;

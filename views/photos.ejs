@@ -1,0 +1,35 @@
+<%- include('partials/header', { title: 'Photos — Aiden Drugge' }) %>
+
+<section class="hero anim-fade-up delay-1">
+  <span class="hero-eyebrow">Feed</span>
+  <h1 class="hero-title">Photos</h1>
+  <div class="hero-rule"></div>
+</section>
+
+<div class="container">
+  <% photos.forEach((post, i) => { %>
+  <article class="section-sm anim-fade-up">
+
+    <div class="t-eyebrow-muted mb-md"><%= post.date %><% if (post.location) { %> &nbsp;&middot;&nbsp; <%= post.location %><% } %></div>
+    <h2 class="t-h2<% if (!post.description) { %> mb-md<% } %>"><%= post.title %></h2>
+    <% if (post.description) { %>
+    <p class="t-body mt-sm mb-md"><%= post.description %></p>
+    <% } %>
+
+    <% post.photos.forEach((photo) => { %>
+    <div class="mb-md">
+      <img src="<%= photo.src %>" alt="<%= photo.caption || post.title %>">
+      <% if (photo.caption) { %>
+      <p class="t-caption mt-sm"><%= photo.caption %></p>
+      <% } %>
+    </div>
+    <% }) %>
+
+  </article>
+  <% if (i < photos.length - 1) { %>
+  <hr class="amber-rule">
+  <% } %>
+  <% }) %>
+</div>
+
+<%- include('partials/footer') %>

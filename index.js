@@ -21,6 +21,11 @@ app.get('/resume', (_req, res) => {
   res.render('resume');
 });
 
+app.get('/photos', (_req, res) => {
+  const photos = require('./data/photos.json');
+  res.render('photos', { photos });
+});
+
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });

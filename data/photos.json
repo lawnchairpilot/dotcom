@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Day with my lil cuz",
+    "description": "It was my Uncle's birthday and he came to town with my little cousin in tow. Got to show her the seals!",
+    "date": "March 2026",
+    "location": "Santa Cruz, CA",
+    "photos": [
+      {
+        "src": "/assets/photos/remi/remi_1.jpeg"
+      },
+      {
+        "src": "/assets/photos/remi/remi_2.jpeg"
+      },
+      {
+        "src": "/assets/photos/remi/remi_3.jpeg"
+      }
+    ]
+  }
+]
