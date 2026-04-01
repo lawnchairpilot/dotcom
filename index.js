@@ -13,6 +13,14 @@ app.get('/', (_req, res) => {
   res.render('index');
 });
 
+app.get('/bio', (_req, res) => {
+  res.render('bio');
+});
+
+app.get('/resume', (_req, res) => {
+  res.render('resume');
+});
+
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });

@@ -1,0 +1,101 @@
+<%- include('partials/header', { title: 'Resume — Aiden Drugge' }) %>
+
+<section class="hero anim-fade-up delay-1">
+  <span class="hero-eyebrow">Resume</span>
+  <h1 class="hero-title">Aiden<br>Drugge</h1>
+  <div class="hero-rule"></div>
+  <p class="hero-subtitle">Software Developer &mdash; Santa Cruz, California</p>
+  <a href="/assets/Aiden_Drugge_Software_Dev.pdf" download class="btn mt-md">Download PDF</a>
+</section>
+
+<div class="container">
+
+  <!-- Profile -->
+  <section class="section-sm section-ruled">
+    <div class="divider"><span>Profile</span></div>
+    <p class="t-body-large anim-fade-up">
+      <% const start = new Date(2022, 2, 21); const now = new Date(); let yrs = now.getFullYear() - start.getFullYear(); if (now < new Date(now.getFullYear(), start.getMonth(), start.getDate())) yrs--; %>
+      Elastic and dependable software developer with over <%= yrs %> years of experience executing
+      complex projects from ideation to production. Builds solutions with a focus on improving
+      the lives of stakeholders, whether it be synchronizing product data throughout company
+      systems, or integrating a new warehouse with an ERP. Proficiency in web frameworks,
+      database design, and data visualization tools flesh out a well-rounded toolkit.
+      <em>Always hungry to learn.</em>
+    </p>
+  </section>
+
+  <!-- Experience -->
+  <section class="section-sm section-ruled">
+    <div class="divider"><span>Experience</span></div>
+
+    <div class="card anim-fade-up">
+      <span class="card-label">2022 &mdash; Present &nbsp;&middot;&nbsp; Scotts Valley, CA</span>
+      <div class="card-title">Software Developer</div>
+      <div class="t-eyebrow-muted mt-sm mb-md">BMC Switzerland</div>
+      <ul class="card-body">
+        <li>Design, build, and maintain software solutions that BMC relies on, from large projects to ad-hoc requests.</li>
+        <li>Integrated a third-party PIM system as a single source of truth for product data throughout company systems &mdash; eliminating significant redundancies in data entry and storage for websites and applications.</li>
+        <li>Self-managed an integration project to connect a new warehouse to the ERP, tracking inbound and outbound shipments by the hour.</li>
+        <li>Drastically improved the efficiency of product inventory and pricing synchronization between the ERP and company websites. Wrote the first documentation of these processes.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section-sm section-ruled">
+    <div class="divider"><span>Education</span></div>
+
+    <div class="card anim-fade-up">
+      <span class="card-label">2016 &mdash; 2021 &nbsp;&middot;&nbsp; San Luis Obispo, CA</span>
+      <div class="card-title">B.S. Business Administration</div>
+      <div class="t-eyebrow-muted mt-sm mb-md">Cal Poly San Luis Obispo &nbsp;&middot;&nbsp; Information Systems</div>
+      <ul class="card-body">
+        <li>President&rsquo;s Academic Honors List</li>
+        <li>4&times; Dean&rsquo;s Academic Honors List</li>
+        <li>Selected as Business Analytics Fellow &mdash; trained in Data Analytics and AWS services, applied to work with local companies.</li>
+        <li>Built an application to scrape address data from government websites for a client fighting human trafficking.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Internships -->
+  <section class="section-sm section-ruled">
+    <div class="divider"><span>Internships</span></div>
+
+    <div class="card anim-fade-up">
+      <span class="card-label">2020 &nbsp;&middot;&nbsp; Remote</span>
+      <div class="card-title">Business Intelligence Intern</div>
+      <div class="t-eyebrow-muted mt-sm mb-md">SurveyMonkey</div>
+      <ul class="card-body">
+        <li>Built a Tableau report measuring KPIs of over 100 integrations, giving business stakeholders key insights for analysis.</li>
+        <li>Created complex SQL scripts to retrieve and manipulate large datasets. Connected multiple data sources into one report.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section-sm section-ruled">
+    <div class="divider"><span>Skills</span></div>
+    <div class="grid-3 anim-fade-up">
+      <div class="card">
+        <span class="card-label">Languages &amp; Query</span>
+        <p class="card-body mt-sm">SQL &middot; Python &middot; C#</p>
+      </div>
+      <div class="card">
+        <span class="card-label">Frameworks</span>
+        <p class="card-body mt-sm">Flask &middot; Django &middot; .NET</p>
+      </div>
+      <div class="card">
+        <span class="card-label">Tools &amp; Platforms</span>
+        <p class="card-body mt-sm">Tableau &middot; SAP ByDesign &middot; REST &middot; GraphQL</p>
+      </div>
+      <div class="card">
+        <span class="card-label">Data</span>
+        <p class="card-body mt-sm">Relational database design &middot; ETL &middot; Data visualization</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<%- include('partials/footer') %>
