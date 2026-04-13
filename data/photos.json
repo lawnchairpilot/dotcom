@@ -1,7 +1,7 @@
 [
   {
-    "title": "Day with my lil cuz",
-    "description": "It was my Uncle's birthday and he came to town with my little cousin in tow. Got to show her the seals!",
+    "title": "Splendid Day",
+    "description": "My lil cousin having a ball.",
     "date": "March 2026",
     "location": "Santa Cruz, CA",
     "photos": [
@@ -13,6 +13,17 @@
       },
       {
         "src": "/assets/photos/remi/remi_3.jpeg"
+      }
+    ]
+  },
+  {
+    "title": "Sightseers",
+    "description": "Patrons of a ferry ride in Lugano, Switzerland this past summer.",
+    "date": "August 2025",
+    "location": "Lugano, CH",
+    "photos": [
+      {
+        "src": "/assets/photos/lugano/Ferry.jpg"
       }
     ]
   }
